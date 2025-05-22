@@ -1,93 +1,111 @@
-/* App.css */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body {
-  background: #f5f7fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 50px 20px;
-  margin: 0;
+  align-items: flex-start;
+  padding-top: 40px;
 }
 
+/* Main container */
 .container {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
   width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
 }
 
-h2 {
+/* Heading */
+.container h2 {
+  font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
   text-align: center;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
+/* Input and button */
 input {
   width: 70%;
   padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  font-size: 1em;
+  background-color: #1f1f1f;
+  color: #ffffff;
   outline: none;
-  transition: border-color 0.3s;
-}
-
-input:focus {
-  border-color: #0070f3;
+  box-shadow: 0 0 5px #00ffff;
 }
 
 button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  background: #0070f3;
-  color: white;
+  padding: 10px 15px;
   border: none;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 10px;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #005bb5;
+  background-color: #00e6e6;
+  box-shadow: 0 0 10px #00ffff;
 }
 
+/* Task list */
 ul {
   list-style: none;
-  padding: 0;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 li {
-  padding: 12px 15px;
-  border-bottom: 1px solid #eee;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: default;
+  transition: 0.3s;
 }
 
-li span {
-  flex-grow: 1;
-  user-select: none;
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
-li span.completed {
+li .completed {
   text-decoration: line-through;
-  color: #999;
+  color: #888;
 }
 
+/* Delete button */
 li button {
-  background: transparent;
+  background-color: transparent;
   border: none;
-  color: #e00;
-  font-size: 18px;
+  color: #ff4c4c;
+  font-size: 1.2em;
   cursor: pointer;
-  padding: 0 5px;
+  transition: 0.3s;
 }
 
 li button:hover {
-  color: #a00;
+  color: #ff1a1a;
+  text-shadow: 0 0 5px #ff0000;
 }
