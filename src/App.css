@@ -1,0 +1,93 @@
+/* App.css */
+
+body {
+  background: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0070f3;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+li span {
+  flex-grow: 1;
+  user-select: none;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  color: #e00;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+li button:hover {
+  color: #a00;
+}
